@@ -1,0 +1,251 @@
+/* CSS reset */
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+html
+{
+    scroll-behavior: smooth;
+    background-color: #f8f1b5;
+}
+
+/* CSS Variables */
+
+/* Navigation Bar */
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    /* height: 90px; */
+    position: sticky;
+    height: 86px;
+    top: 0px;
+
+    /* justify-content: center; */
+}
+/* NAvigation bar :Logo and image */
+#logo
+{
+    margin:16px 23px;
+}
+#logo img
+{
+    height: 73px;
+    margin: 8px 23px;
+}
+/*navigation bar: List Styling */
+
+#navbar ul
+{
+    display: flex;
+}
+#navbar::before
+{
+    content:" ";
+    background-color: black;
+    position: absolute;
+    /* margin-top: 0px; */
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li
+{
+    /* color:white; */
+    list-style: none;
+    font-size: 1.3rem;
+    /* text-decoration: none; */
+
+}
+#navbar ul li a
+{
+    color:rgb(255, 255, 255);
+    display: block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+#navbar ul li a:hover
+{
+    color:black;
+    background-color:white;
+}
+/* Home section */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 456px;
+}
+#home::before
+{
+    content:" ";
+    position: absolute;
+    background:url(images/pexels-creative-vix-370984.jpg)no-repeat center center/cover;
+    /* margin-top: 0px; */
+    top: 0px;
+    left: 0px;
+    height: 550px;
+    /* height: 100%; */
+    width:100%;
+    z-index: -1;
+    opacity:0.95;
+}
+#home h1
+{
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#home p
+{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+/* Utility classes */
+.h-primary
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn
+{
+    padding: 6px 20px;
+    border: 2px solid white ;
+    background-color: #5a3d04;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover
+{
+    color: black;
+    background-color: rgb(255, 136, 0);
+}
+.center
+{
+    text-align: center;
+}
+/* Services section  */
+#services
+{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box
+{
+    border: 2px solid #ff7f29;
+    padding: 30px;
+    margin: 15px 10px;
+    border-radius: 16px;
+    background: #e2e2e2;
+
+}
+#services .box img
+{
+    border-radius: 10px;
+    height: 100px; 
+    display: block;
+    margin: auto;  
+}
+#services .box p{
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+#client-section
+{
+    height: 344px;
+}
+#client-section::before
+{
+    content: " ";
+    position: absolute;
+    background: url("images/pexels-fauxels-3184192.jpg")no-repeat center center/cover;
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 200px;
+    width:700px;
+
+}
+/* Contact section */
+#contact
+{
+    position: relative;
+}
+#contact::before
+{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("images/envelopes-gee304d215_1920.jpg") no-repeat center center/cover;
+}
+footer
+{
+    background: #89990078;
+    color: #000000;
+    padding: 9px 20px;
+}
+#contact-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form
+{
+    width: 40%;
+
+}
+#contact-box label
+{
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+#our
+{
+    padding-top: 35px;
+}
